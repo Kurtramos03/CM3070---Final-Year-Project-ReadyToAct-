@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "ReadyToAct",
+    "slug": "readytoact-final-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "platforms": ["ios", "android", "web"],
+    "description": "A Singapore-focused mobile app for local disaster preparedness, alerts, community reports, and readiness learning.",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "ReadyToAct uses your location once to estimate your Singapore region and personalise local alerts."
+        }
+      ]
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "ReadyToAct uses your location once to estimate your Singapore region and personalise local alerts."
+      }
+    },
+    "android": {
+      "permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+    }
+  }
+}
