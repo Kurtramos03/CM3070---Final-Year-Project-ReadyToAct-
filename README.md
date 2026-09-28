@@ -74,6 +74,7 @@ readytoact/
 ├── package.json
 ├── package-lock.json
 ├── README.md
+├── .gitignore
 ├── .env.example
 ├── assets/
 ├── components/
@@ -81,5 +82,182 @@ readytoact/
 ├── screens/
 ├── services/
 ├── storage/
+├── styles/
 ├── utils/
 └── tests/
+```
+
+---
+
+## Prerequisites
+
+Before running the project, install:
+
+- Node.js
+- npm
+- Expo CLI through `npx`
+- Expo Go, if running on a physical phone
+
+You do not need to install `node_modules` manually. It will be created after running `npm install`.
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Kurtramos03/CM3070---Final-Year-Project-ReadyToAct-.git
+cd CM3070---Final-Year-Project-ReadyToAct-
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the Expo development server:
+
+```bash
+npx expo start
+```
+
+---
+
+## Running the Application
+
+### Option 1: Run on Web
+
+The web version is useful for quick testing and demonstration.
+
+```bash
+npx expo start --web
+```
+
+If web dependencies are missing, install them using:
+
+```bash
+npx expo install react-dom react-native-web @expo/metro-runtime
+```
+
+Then run again:
+
+```bash
+npx expo start --web
+```
+
+---
+
+### Option 2: Run on Physical Phone
+
+1. Install Expo Go on your phone.
+2. Make sure your laptop and phone are on the same Wi-Fi network.
+3. Run:
+
+```bash
+npx expo start
+```
+
+4. Scan the QR code using Expo Go.
+
+---
+
+## Optional API Key Setup
+
+The app can run without an API key because it includes fallback handling.
+
+To add an optional data.gov.sg API key:
+
+1. Create a `.env` file in the project root.
+2. Add the following line:
+
+```env
+EXPO_PUBLIC_DATA_GOV_API_KEY=your_api_key_here
+```
+
+3. Restart Expo:
+
+```bash
+npx expo start -c
+```
+
+Do not upload the real `.env` file to GitHub.
+
+The repository includes `.env.example` only as a safe template.
+
+---
+
+## Testing
+
+The project includes basic logic tests for:
+
+- readiness score calculation;
+- report expiry status.
+
+Run the tests with:
+
+```bash
+npm run test
+```
+
+Expected output:
+
+```text
+Readiness score tests passed
+Report status tests passed
+```
+
+Manual testing should also cover:
+
+- app launch;
+- bottom tab navigation;
+- Alerts tab;
+- live data verification;
+- simulated fallback alerts;
+- My Area / GPS;
+- manual area selection;
+- Map tab;
+- community report submission;
+- report trust status;
+- report expiry logic;
+- Preparedness checklist;
+- readiness quiz;
+- readiness score;
+- Resource Hub;
+- Profile badges;
+- feedback form.
+
+---
+
+## Evaluation Summary
+
+ReadyToAct was evaluated using:
+
+- functionality testing;
+- API testing;
+- GPS/location testing;
+- logic testing;
+- five-participant task-based user evaluation.
+
+The user evaluation measured:
+
+- task-completion rate;
+- approximate time on task;
+- observed errors;
+- satisfaction ratings;
+- qualitative feedback.
+
+The main findings were:
+
+- users were able to complete the main workflows;
+- alert clarity and readiness motivation were rated strongly;
+- trust-label wording needed improvement;
+- GPS explanation should be clearer;
+- the map should be explained as a regional overview rather than a precise GIS map.
+
+---
+
+## Disclaimer
+
+ReadyToAct is a student final-year project prototype. It is not an official emergency service and should not replace official government alerts, emergency instructions or professional advice.
