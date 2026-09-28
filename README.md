@@ -208,28 +208,6 @@ Readiness score tests passed
 Report status tests passed
 ```
 
-Manual testing should also cover:
-
-- app launch;
-- bottom tab navigation;
-- Alerts tab;
-- live data verification;
-- simulated fallback alerts;
-- My Area / GPS;
-- manual area selection;
-- Map tab;
-- community report submission;
-- report trust status;
-- report expiry logic;
-- Preparedness checklist;
-- readiness quiz;
-- readiness score;
-- Resource Hub;
-- Profile badges;
-- feedback form.
-
----
-
 ## Evaluation Summary
 
 ReadyToAct was evaluated using:
